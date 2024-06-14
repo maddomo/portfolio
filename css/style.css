@@ -12,9 +12,10 @@
    ========================================================================== */
 
 html {
-  color: #222;
+  color: white;
   font-size: 1em;
   line-height: 1.4;
+  background-color: black;
 }
 * {
   border: 2px solid red;
@@ -31,11 +32,15 @@ nav{
 
 }
 
+.turqoise{
+  color: turquoise;
+}
 h2{
   display: block;
   font-weight: bold;
   font-size: 2rem;
 }
+
 
 .navItems{
   display: flex;
@@ -51,12 +56,17 @@ h2{
 
 .navItem a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .navItem a:hover{
   text-decoration: underline;
   font-size: 1.3rem;
+  color: turquoise;
+}
+
+.navItem a.active{
+  color: turquoise;
 }
 
 /*
