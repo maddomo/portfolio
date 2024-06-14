@@ -16,6 +16,48 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+* {
+  border: 2px solid red;
+}
+
+body{
+  height: auto;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+
+}
+
+h2{
+  display: block;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.navItems{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  list-style: none;
+}
+
+.navItem {
+  margin-left: 20px;
+  font-size: 1.2rem;
+}
+
+.navItem a{
+  text-decoration: none;
+  color: black;
+}
+
+.navItem a:hover{
+  text-decoration: underline;
+  font-size: 1.3rem;
+}
 
 /*
  * Remove text-shadow in selection highlight:
