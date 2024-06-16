@@ -35,10 +35,15 @@ nav{
 .turqoise{
   color: turquoise;
 }
+
+h1{
+  font-weight: bold;
+  font-size: 4rem;
+}
 h2{
   display: block;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 
@@ -51,7 +56,7 @@ h2{
 
 .navItem {
   margin-left: 20px;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .navItem a{
@@ -61,13 +66,86 @@ h2{
 
 .navItem a:hover{
   text-decoration: underline;
-  font-size: 1.3rem;
+  font-size: 2.1rem;
   color: turquoise;
 }
 
 .navItem a.active{
   color: turquoise;
 }
+
+#middlePart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bigText{
+  width: 50%;
+  height: 50%;
+  margin-bottom: 100px;
+}
+
+.bigText h1{
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+.bigText p{
+  margin-left: 15%;
+  margin-right: 10%;
+  font-size: 1.4rem;
+}
+
+.buttons{
+  margin-left: 15%;
+  margin-top: 50px;
+}
+
+
+button{
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.button1{
+  color: black;
+  background-color: turquoise;
+  cursor: pointer;
+}
+
+.button1:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid turquoise;
+}
+.button2{
+  margin-left: 5%;
+  border: 2px solid turquoise;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.button2:hover{
+  background-color: turquoise;
+  color: black;
+}
+.picBox{
+  width: 50%;
+  height: 80vh;
+  margin-left: 150px;
+}
+
+.picBox img{
+  height: 100%;
+  width: auto;
+
+}
+
+
 
 /*
  * Remove text-shadow in selection highlight:
