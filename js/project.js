@@ -1,5 +1,3 @@
-
-
 document.getElementById('resetButton').addEventListener('click', function() {
   document.getElementById('name').value = '';
   document.getElementById('email').value = '';
