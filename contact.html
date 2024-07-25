@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<nav>
+  <h2 id="logo"><span class="turqoise">Moritz</span> Foglia</h2>
+  <ul class="navItems">
+    <li class="navItem">
+      <a href="index.html" >Home</a>
+    </li>
+    <li class="navItem">
+      <a href="about-me.html" >About Me</a>
+    </li>
+    <li class="navItem">
+      <a href="services.html">Services</a>
+    </li>
+    <li class="navItem">
+      <a href="projects.html">Projects</a>
+    </li>
+    <li class="navItem">
+      <a href="contact.html" class="active">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<main>
+  <section class="formsection">
+    <div class="form-container">
+      <form id="contactForm">
+        <h2>Kontaktieren Sie uns</h2>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Nachricht:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="buttonCon">Senden</button>
+        <button type="button" id="resetButton" class="buttonCon">Felder leeren</button>
+        <p id="response"></p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="site-footer">
+    <p>&copy; 2024 Mein Unternehmen. Alle Rechte vorbehalten.</p>
+    <ul class="footer-links">
+      <li><a href="imprint.html">Imprint</a></li>
+      <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="js/project.js"></script>
+
+</body>
+
+</html>
