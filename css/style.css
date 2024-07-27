@@ -17,10 +17,10 @@ html {
   line-height: 1.4;
   background-color: black;
 }
-/* * {
+ * {
   border: 2px solid red;
 }
-*/
+
 
 
 body{
@@ -83,12 +83,7 @@ h2{
   height: 100vh;
 }
 
-#middlePart2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+
 
 #middlePart3{
   display: flex;
@@ -163,15 +158,15 @@ button{
   color: black;
 }
 .picBox{
-  width: 50%;
-  height: 80vh;
+  max-width: 50%;
+  height: auto;
   margin-left: 150px;
 }
 
 .picBox img{
-  height: 100%;
-  width: auto;
-
+  height: auto ;
+  max-width: 100%;
+  display: block;
 }
 
 header{
@@ -364,7 +359,160 @@ header{
 }
 
 
-@media (min-width: 601px) and (max-width: 1024px){
+@media (min-width: 601px) and (max-width: 1117px){
+  .navItems{
+    display: none;
+  }
+  nav{
+    padding: 0;
+  }
+
+  nav h2{
+    font-size: 2rem;
+  }
+
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    position: fixed;
+    top: 45px;
+    right: 20px;
+    z-index: 1000;
+  }
+  .menu-icon div {
+    height: 4px;
+    background-color: white;
+    transition: all 0.3s;
+  }
+  .menu-icon.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-icon.active div:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-icon.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+  }
+  .menu.active {
+    display: flex;
+  }
+  .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+  }
+  #middlePart{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    height: auto;
+  }
+
+  .bigText{
+    width: 100%;
+    order: 2;
+
+  }
+
+  .bigText h1{
+    font-size: 3rem;
+
+  }
+
+  .bigText p{
+
+  }
+
+  .picBox{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+
+    order: 1;
+  }
+
+  .picBox img{
+    height: auto;
+    max-width: 100%;
+  }
+
+
+
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 40px;
+
+  }
+
+  button{
+    height: 40px;
+    width: 160px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #middlePart3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    height: auto;
+  }
+
+  #middlePart3 h2{
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  #middlePart3 p{
+    margin: 0;
+  }
+  #secondText{
+    display: none;
+  }
+
+  .bigText ul{
+    margin-left: 0;
+  }
+
+  #middlePart2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    height: auto;
+  }
+
+  .bigText2{
+    max-width: 500px;
+    height: auto;
+
+  }
+
+  .bigText2 h1{
+    font-size: 3rem;
+
+  }
+
 
 }
 
