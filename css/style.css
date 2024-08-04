@@ -549,7 +549,8 @@ textarea {
 
   form {
     width: 90%; /* Macht das Formular breiter auf kleinen Bildschirmen */
-    margin-left: 5%; /* Geringer Abstand zum Rand */
+    margin-left: 10px; /* Geringer Abstand zum Rand */
+
   }
   .form-container {
     padding: 20px; /* Weniger Padding auf kleinen Geräten */
